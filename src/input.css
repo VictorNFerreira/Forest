@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@theme
+{
+    --color-verde-7: #030504; 
+    --color-verde-6: #0f1c15;
+    --color-verde-5: #16281f;
+    --color-verde-4: #2e482c;
+    --color-verde-3: #17e880;
+    --color-verde-2: #91ee77;
+    --color-verde-1: #acef75;
+
+}
+
+@utility container
+{
+    @apply mx-auto p-4 max-sm:p-2;
+
+}
