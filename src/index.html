@@ -191,5 +191,58 @@
                 </div>
             </div>
         </section>
+
+        <section id="contato" class="container grid grid-cols-2 mb-16 gap-8  max-sm:grid-cols-1 max-sm:mb-12">
+            <div>
+                <h1 class="mb-4 text-4xl text-verde-2 font-serif">Nossos Contatos</h1>
+                <p class="mb-8 text-gray-200 text-balance">Tem interesse em passar uma temporada na Forest? Entre em contato com a gente por telefone ou email.</p>
+            
+                <div class="grid gap-4">
+                    <div>
+                        <span class="inline-block w-6 h-0.5 bg-verde-3"></span>
+                        <h2 class="mb-2 text-2xl text-verde-2 font-serif">Base</h2>
+                        <p class="text-gray-300">Rua da Mata, 123 - Floresta Nacional - Nova Friburgo</p>
+                    </div>
+
+                    <div>
+                        <span class="inline-block w-6 h-0.5 bg-verde-3"></span>
+                        <h2 class="mb-2 text-2xl text-verde-2 font-serif">Email</h2>
+                        <p class="text-gray-300">contato@forest.com</p>
+                    </div>
+
+                    <div>
+                        <span class="inline-block w-6 h-0.5 bg-verde-3"></span>
+                        <h2 class="mb-2 text-2xl text-verde-2 font-serif">Telefone</h2>
+                        <p class="text-gray-300">22 99999-9999</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="grid p-8 gap-4 bg-verde-6 shadow-2xl rounded-xl  max-lg:p-4" action="">
+                <div class="grid gap-1">
+                    <label class="text-white" for="nome">Nome</label>
+                    <input id="nome" class="p-2 border-2 border-verde-5 text-white bg-verde-5 rounded-md placeholder:text-verde-6 focus:border-verde-6 focus:outline-none focus:ring-2 focus:ring-verde-3" type="text" name="nome" required>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4  max-lg:grid-cols-1">
+                    <div class="grid gap-1">
+                        <label class="text-white" for="email">Email</label>
+                        <input id="email" class="p-2 border-2 border-verde-5 text-white bg-verde-5 rounded-md placeholder:text-verde-6 focus:border-verde-6 focus:outline-none focus:ring-2 focus:ring-verde-3" type="email" name="email" required>
+                    </div>
+
+                    <div class="grid gap-1">
+                        <label class="text-white" for="telefone">Telefone</label>
+                        <input id="telefone" class="p-2 border-2 border-verde-5 text-white bg-verde-5 rounded-md placeholder:text-verde-6 focus:border-verde-6 focus:outline-none focus:ring-2 focus:ring-verde-3" type="text" name="telefone" placeholder="(22) 00000-0000" required>
+                    </div>
+                </div>
+
+                <div class="grid gap-1">
+                    <label class="text-white" for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" class="p-2 border-2 border-verde-5 text-white bg-verde-5 rounded-md placeholder:text-verde-6 resize-none focus:border-verde-6 focus:outline-none focus:ring-2 focus:ring-verde-3" type="text" rows="7" name="mensagem" required></textarea>
+                </div>
+
+                <button class="inline-block px-4 py-2 justify-self-start text-verde-6 bg-verde-3 rounded-full">Enviar Email</button>
+            </form>
+        </section>
     </body>
 </html>
