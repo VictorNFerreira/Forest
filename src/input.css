@@ -10,10 +10,69 @@
     --color-verde-2: #91ee77;
     --color-verde-1: #acef75;
 
+    --animate-slideIn: slideIn 0.4s ease-in-out forwards;
+    --animate-fadeIn: fadeIn 0.4s ease-in-out forwards;
+
+    @keyframes slideIn
+    {
+        from
+        {
+            opacity: 0;
+            transform: translateX(-20px);
+
+        }
+        to
+        {
+            opacity: 1;
+            transform: translateX(0px);
+            
+        }
+
+    }
+
+    @keyframes fadeIn
+    {
+        from
+        {
+            opacity: 0;
+
+        }
+        to
+        {
+            opacity: 1;
+            
+        }
+
+    }
+
 }
 
 @utility container
 {
     @apply mx-auto p-4 max-sm:p-2;
 
+}
+
+@utility animate-1
+{
+    animation-delay: 100ms;
+    
+}
+
+@utility animate-2
+{
+    animation-delay: 200ms;
+    
+}
+
+@utility animate-3
+{
+    animation-delay: 300ms;
+    
+}
+
+@utility animate-4
+{
+    animation-delay: 400ms;
+    
 }
