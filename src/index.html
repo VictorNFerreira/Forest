@@ -23,14 +23,20 @@
         <header class="container flex justify-between items-center py-8 gap-8">
             <a href=""><img src="./img/forest.svg" alt="Forest"></a>
 
-            <nav>
-                <ul class="flex flex-wrap gap-8 text-xl text-white">
-                    <li><a class="hover:underline hover:underline-offset-4" href="#acomodacoes">Acomodações</a></li>
-                    <li><a class="hover:underline hover:underline-offset-4" href="#eventos">Eventos</a></li>
-                    <li><a class="hover:underline hover:underline-offset-4" href="#experiencias">Experiências</a></li>
-                    <li><a class="hover:underline hover:underline-offset-4" href="#contato">Contato</a></li>
+            <nav id="mobile-menu" class="flex items-center z-40  max-md:hidden max-md:w-full max-md:inset-0 max-md:fixed">
+                <div class="fixed inset-0 bg-verde-7/40 backdrop-blur-sm  md:hidden"></div>
+
+                <ul class="flex flex-wrap gap-8 text-xl text-white  max-md:block max-md:w-full max-md:p-8 max-md:divide-y-2 max-md:divide-white/10 max-md:text-2xl max-md:absolute max-md:z-50">
+                    <li><a class="md:hover:underline md:hover:underline-offset-4  max-md:block max-md:p-4 max-md:hover:bg-white/10" href="#acomodacoes">Acomodações</a></li>
+                    <li><a class="md:hover:underline md:hover:underline-offset-4  max-md:block max-md:p-4 max-md:hover:bg-white/10" href="#eventos">Eventos</a></li>
+                    <li><a class="md:hover:underline md:hover:underline-offset-4  max-md:block max-md:p-4 max-md:hover:bg-white/10" href="#experiencias">Experiências</a></li>
+                    <li><a class="md:hover:underline md:hover:underline-offset-4  max-md:block max-md:p-4 max-md:hover:bg-white/10" href="#contato">Contato</a></li>
                 </ul>
             </nav>
+
+            <button id="mobile-botao" class="flex px-4 py-2 items-center gap-3 text-verde-6 bg-verde-3 rounded-full cursor-pointer  md:hidden">
+                Menu <span class="flex flex-col w-4 h-3 justify-between *:h-0.5 *:bg-verde-5 *:rounded-md"><span></span><span></span><span></span></span>
+            </button>
         </header>
 
         <main class="container">
@@ -285,5 +291,7 @@
                 </ul>
             </div>
         </footer>
+
+        <script type="module" src="./javascript/script.js"></script>
     </body>
 </html>
